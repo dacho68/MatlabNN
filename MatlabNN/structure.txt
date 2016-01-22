@@ -1,0 +1,37 @@
+Neuron
+######
+
+-vector<double> weights
+-vector<double> bias
++double fire(vector<double> input)
+>(weights, bias)
+########################################################
+
+
+
+Layer - Base
+############
+
+-vector<Neuron> neurons
++virtual vector<double> transfer()
+>(neurons)
+************************
+
+SigmoidLayer: Layer
+*******************
+*implements a transfer()
+
+************************
+SoftMaxLayer: Layer
+*******************
+*implements a transfer()
+########################################################
+
+
+
+NeuralNet
+#########
+-vector<Layer> layers
+-vector<double> predict(vector<double> input)
+>(layers)
+########################################################

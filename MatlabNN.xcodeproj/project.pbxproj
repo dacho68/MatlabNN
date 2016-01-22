@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		519D95C31C52C61C00FC7298 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 519D95C21C52C61C00FC7298 /* main.cpp */; };
+		519D95CB1C52C68500FC7298 /* Neuron.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 519D95C91C52C68500FC7298 /* Neuron.cpp */; };
+		519D95CF1C52CA9E00FC7298 /* Layer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 519D95CD1C52CA9E00FC7298 /* Layer.cpp */; };
+		519D95D21C52CCB200FC7298 /* SigmoidLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 519D95D01C52CCB200FC7298 /* SigmoidLayer.cpp */; };
+		519D95D51C52D1FA00FC7298 /* SoftMaxLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 519D95D31C52D1FA00FC7298 /* SoftMaxLayer.cpp */; };
+		519D95D91C52D40900FC7298 /* NeuralNet.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 519D95D61C52D25F00FC7298 /* NeuralNet.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +30,17 @@
 /* Begin PBXFileReference section */
 		519D95BF1C52C61C00FC7298 /* MatlabNN */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = MatlabNN; sourceTree = BUILT_PRODUCTS_DIR; };
 		519D95C21C52C61C00FC7298 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		519D95C91C52C68500FC7298 /* Neuron.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Neuron.cpp; sourceTree = "<group>"; };
+		519D95CA1C52C68500FC7298 /* Neuron.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Neuron.hpp; sourceTree = "<group>"; };
+		519D95CC1C52C6A000FC7298 /* structure.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = structure.txt; sourceTree = "<group>"; };
+		519D95CD1C52CA9E00FC7298 /* Layer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Layer.cpp; sourceTree = "<group>"; };
+		519D95CE1C52CA9E00FC7298 /* Layer.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Layer.hpp; sourceTree = "<group>"; };
+		519D95D01C52CCB200FC7298 /* SigmoidLayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SigmoidLayer.cpp; sourceTree = "<group>"; };
+		519D95D11C52CCB200FC7298 /* SigmoidLayer.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = SigmoidLayer.hpp; sourceTree = "<group>"; };
+		519D95D31C52D1FA00FC7298 /* SoftMaxLayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SoftMaxLayer.cpp; sourceTree = "<group>"; };
+		519D95D41C52D1FA00FC7298 /* SoftMaxLayer.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = SoftMaxLayer.hpp; sourceTree = "<group>"; };
+		519D95D61C52D25F00FC7298 /* NeuralNet.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NeuralNet.cpp; sourceTree = "<group>"; };
+		519D95D71C52D25F00FC7298 /* NeuralNet.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = NeuralNet.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,7 +73,18 @@
 		519D95C11C52C61C00FC7298 /* MatlabNN */ = {
 			isa = PBXGroup;
 			children = (
+				519D95CC1C52C6A000FC7298 /* structure.txt */,
 				519D95C21C52C61C00FC7298 /* main.cpp */,
+				519D95C91C52C68500FC7298 /* Neuron.cpp */,
+				519D95CA1C52C68500FC7298 /* Neuron.hpp */,
+				519D95CD1C52CA9E00FC7298 /* Layer.cpp */,
+				519D95CE1C52CA9E00FC7298 /* Layer.hpp */,
+				519D95D01C52CCB200FC7298 /* SigmoidLayer.cpp */,
+				519D95D11C52CCB200FC7298 /* SigmoidLayer.hpp */,
+				519D95D31C52D1FA00FC7298 /* SoftMaxLayer.cpp */,
+				519D95D41C52D1FA00FC7298 /* SoftMaxLayer.hpp */,
+				519D95D61C52D25F00FC7298 /* NeuralNet.cpp */,
+				519D95D71C52D25F00FC7298 /* NeuralNet.hpp */,
 			);
 			path = MatlabNN;
 			sourceTree = "<group>";
@@ -118,6 +145,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				519D95D91C52D40900FC7298 /* NeuralNet.cpp in Sources */,
+				519D95CF1C52CA9E00FC7298 /* Layer.cpp in Sources */,
+				519D95CB1C52C68500FC7298 /* Neuron.cpp in Sources */,
+				519D95D21C52CCB200FC7298 /* SigmoidLayer.cpp in Sources */,
+				519D95D51C52D1FA00FC7298 /* SoftMaxLayer.cpp in Sources */,
 				519D95C31C52C61C00FC7298 /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
