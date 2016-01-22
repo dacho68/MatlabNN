@@ -41,7 +41,7 @@
 		519D95D41C52D1FA00FC7298 /* SoftMaxLayer.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = SoftMaxLayer.hpp; sourceTree = "<group>"; };
 		519D95D61C52D25F00FC7298 /* NeuralNet.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NeuralNet.cpp; sourceTree = "<group>"; };
 		519D95D71C52D25F00FC7298 /* NeuralNet.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = NeuralNet.hpp; sourceTree = "<group>"; };
-		519D95DA1C52E2B500FC7298 /* README.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
+		519D95DC1C52E42900FC7298 /* README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = README.txt; path = ../../README.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +74,7 @@
 		519D95C11C52C61C00FC7298 /* MatlabNN */ = {
 			isa = PBXGroup;
 			children = (
+				519D95DC1C52E42900FC7298 /* README.txt */,
 				519D95CC1C52C6A000FC7298 /* structure.txt */,
 				519D95C21C52C61C00FC7298 /* main.cpp */,
 				519D95C91C52C68500FC7298 /* Neuron.cpp */,
@@ -86,7 +87,6 @@
 				519D95D41C52D1FA00FC7298 /* SoftMaxLayer.hpp */,
 				519D95D61C52D25F00FC7298 /* NeuralNet.cpp */,
 				519D95D71C52D25F00FC7298 /* NeuralNet.hpp */,
-				519D95DA1C52E2B500FC7298 /* README.txt */,
 			);
 			path = MatlabNN;
 			sourceTree = "<group>";
