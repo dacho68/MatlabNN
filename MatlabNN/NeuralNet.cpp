@@ -16,7 +16,7 @@
  * @return
  */
 NeuralNet::NeuralNet(vector<Layer*> layers){
-//	this->layers = layers;
+	this->layers = layers;
 }
 
 /**

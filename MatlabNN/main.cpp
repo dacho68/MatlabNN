@@ -6,8 +6,7 @@
 //  Copyright © 2016 Terna Kpamber. All rights reserved.
 //
 
-#include "SigmoidLayer.hpp"
-#include "SoftMaxLayer.hpp"
+#include "NeuralNet.hpp"
 
 int main(int argc, const char * argv[]) {
 	
@@ -31,8 +30,14 @@ int main(int argc, const char * argv[]) {
 	vector<double> output1 = layer1->transferLayer(inputs);
 	vector<double> output2 = layer2->transferLayer(output1);
 	
-	for (int i = 0; i < output2.size(); i++) {
-		cout << output2[i] << endl;
+	vector<Layer*> layers = {layer1, layer2};
+	
+	NeuralNet network = NeuralNet(layers);
+	
+	vector<double> output = network.predict(inputs);
+	
+	for (int i = 0; i < output.size(); i++) {
+		cout << output[i] << endl;
 	}
 	
 	return 0;
