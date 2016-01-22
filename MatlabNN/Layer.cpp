@@ -17,6 +17,8 @@ Layer::Layer(vector<Neuron> neurons){
 	this->neurons = neurons;
 }
 
+
+
 /**
  * Get the number of neurons in the layer
  * @param nil

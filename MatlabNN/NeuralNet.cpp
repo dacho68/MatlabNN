@@ -15,9 +15,8 @@
  * @param layers vector<Layer> the netwoks layer from input-output
  * @return
  */
-template<class LayerType>
-NeuralNet<LayerType>::NeuralNet(vector<LayerType> layers){
-	this->layers = layers;
+NeuralNet::NeuralNet(vector<Layer*> layers){
+//	this->layers = layers;
 }
 
 /**
@@ -25,12 +24,11 @@ NeuralNet<LayerType>::NeuralNet(vector<LayerType> layers){
  * @param inputs vector<double> a vector representing the inpiut features
  * @return vector<double> of the probabilities of each class
  */
-template<class LayerType>
-vector<double> NeuralNet<LayerType>::predict(vector<double> inputs){
-	vector<double> output = layers[0].trasferLayer(inputs);
+vector<double> NeuralNet::predict(vector<double> inputs){
+	vector<double> output = layers[0]->transferLayer(inputs);
 	
 	for(int i = 1; i < layers.size(); i++){
-		output = layers[i].transferLayer(output);
+		output = layers[i]->transferLayer(output);
 	}
 	
 	return output;

@@ -12,13 +12,12 @@
 #include "SigmoidLayer.hpp"
 #include "SoftMaxLayer.hpp"
 
-template<class LayerType>
 class NeuralNet {
 private:
-	vector<LayerType> layers;
+	vector<Layer*> layers;
 	
 public:
-	NeuralNet(vector<LayerType> layers);
+	NeuralNet(vector<Layer*> layers);
 	vector<double> predict(vector<double> input);
 };
 

@@ -25,12 +25,14 @@ int main(int argc, const char * argv[]) {
 	vector<Neuron> layer1Neurons = {neuron1, neuron2};
 	vector<Neuron> layer2Neurons = {neuron3};
 	
-	SigmoidLayer layer1 = SigmoidLayer(layer1Neurons);
-//	SigmoidLayer layer1 = SigmoidLayer(layer1Neurons);
-	vector<double> output = layer1.transferLayer(inputs);
+	Layer* layer1 = new SigmoidLayer(layer1Neurons);
+	Layer* layer2 = new SoftMaxLayer(layer2Neurons);
 	
-	for (int i = 0; i < output.size(); i++) {
-		cout << output[i] << endl;
+	vector<double> output1 = layer1->transferLayer(inputs);
+	vector<double> output2 = layer2->transferLayer(output1);
+	
+	for (int i = 0; i < output2.size(); i++) {
+		cout << output2[i] << endl;
 	}
 	
 	return 0;
