@@ -7,6 +7,7 @@
 //
 
 #include "SigmoidLayer.hpp"
+#include <math.h>
 
 /**
  * Constructor simply initilizes base class (Layer)
@@ -26,6 +27,8 @@ SigmoidLayer::SigmoidLayer(vector<Neuron> neurons): Layer(neurons){
 vector<double> SigmoidLayer::transferLayer(vector<double> inputs){
 	vector<double> output;
 	for (int i = 0; i < neurons.size(); i++) {
+		double result = neurons[i].fireNeuron(inputs);
+		result = (2.0 / (1.0 + exp(-2.0*result)))-1;
 		output.push_back(neurons[i].fireNeuron(inputs));
 	}
 	return output;

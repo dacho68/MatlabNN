@@ -11,6 +11,10 @@
 
 #include "Layer.hpp"
 
+/**
+ * This class models a neural network layer with a sigoid activation function
+ */
+
 class SigmoidLayer: public Layer{
 public:
 	SigmoidLayer(vector<Neuron> neurons);

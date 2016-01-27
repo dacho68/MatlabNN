@@ -7,6 +7,8 @@
 //
 
 #include "SoftMaxLayer.hpp"
+#include <math.h>
+#include <numeric>
 
 /**
  * Constructor simply initilizes base class (Layer)
@@ -24,9 +26,23 @@ SoftMaxLayer::SoftMaxLayer(vector<Neuron> neurons): Layer(neurons){
  * @return a vector<double> of the layer's neurons' outputs
  */
 vector<double> SoftMaxLayer::transferLayer(vector<double> inputs){
+	
+	double max = *max_element(inputs.begin(), inputs.end());
+	
 	vector<double> output;
-		for (int i = 0; i < neurons.size(); i++) {
-			output.push_back(neurons[i].fireNeuron(inputs));
-		}
+	double sum = 0;
+	for (int i = 0; i < neurons.size(); i++) {
+		double subt = neurons[i].fireNeuron(inputs) - max;
+		double numer = exp(subt);
+		output.push_back(numer);
+		sum += numer;
+	}
+	sum = sum == 0 ? 1: sum;
+	
+	for (int i = 0; i < neurons.size(); i++) {
+		output[i] = output[i]/sum;
+	}
+	
+	
 	return output;
 }

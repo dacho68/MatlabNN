@@ -11,6 +11,11 @@
 
 #include "Neuron.hpp"
 
+/**
+ * This abstract class is the base for derived classes.
+ * It models the layers present in a neural network.
+ */
+
 class Layer{
 protected:
 	vector<Neuron> neurons;

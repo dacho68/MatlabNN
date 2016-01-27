@@ -14,6 +14,10 @@ using namespace std;
 #include <vector>
 #include <assert.h>
 
+/**
+ * This class models a neural network composed of Layers
+ */
+
 class Neuron {
 private:
 	vector<double> weights;

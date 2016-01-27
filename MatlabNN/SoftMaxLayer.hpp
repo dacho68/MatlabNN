@@ -11,6 +11,10 @@
 
 #include "Layer.hpp"
 
+/**
+ * This class models a neural network layer with the softmax function at the outputs
+ */
+
 class SoftMaxLayer: public Layer{
 public:
 	SoftMaxLayer(vector<Neuron> neurons);

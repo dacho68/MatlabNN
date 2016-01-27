@@ -12,6 +12,12 @@
 #include "SigmoidLayer.hpp"
 #include "SoftMaxLayer.hpp"
 
+/**
+ * This class models a neural network. 
+ * It DOES NOT preform training or testing.
+ * The weights and biases must be provided for each neuron in each layer.
+ */
+
 class NeuralNet {
 private:
 	vector<Layer*> layers;
