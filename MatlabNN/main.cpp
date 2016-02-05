@@ -90,7 +90,7 @@ int main(int argc, const char * argv[]) {
 	Neuron l2n1 = Neuron(weights_l2n1, b2[0]);
 	Neuron l2n2 = Neuron(weights_l2n2, b2[1]);
 	Neuron l2n3 = Neuron(weights_l2n3, b2[2]);
-	Neuron l2n4 = Neuron(weights_l2n4, b2[2]);
+	Neuron l2n4 = Neuron(weights_l2n4, b2[3]);
 	
 	vector<Neuron> layer2Neurons = {l2n1, l2n2, l2n3, l2n4};
 	SoftMaxLayer* layer2 = new SoftMaxLayer(layer2Neurons);
